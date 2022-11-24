@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - PNP PLUS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./img/favicon.png" rel="icon">
+  <link href="./img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/materialdesignicons.min.css" rel="stylesheet" >
+  <link href="./css/datatables-style.css" rel="stylesheet">
+  <link href="./css/bootstrap-select.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="./img/logo.png" alt="">
+        <span class="d-none d-lg-block">PNP <span class="text-danger">PLUS</span></span>
+      </a>
+      <i class="mdi mdi-sort-variant toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="mdi mdi-bell-outline"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="mdi mdi-message-text-outline"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="./img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="./img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="./img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="./img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+             
+            <li class="dropdown-header">
+              <div class="mb-2">
+                <img src="./img/profile-img.jpg" alt="Profile" class="rounded-circle">
+              </div>
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="mdi mdi-view-dashboard"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./offer.html">
+          <i class="mdi mdi-store"></i>
+          <span>Offers</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./promotion.html">
+          <i class="mdi mdi-rocket"></i>
+          <span>Promotions</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./eligibility.html">
+          <i class="mdi mdi-filter"></i>
+          <span>Eligibility</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./user.html">
+          <i class="mdi mdi-account"></i>
+          <span>Users</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./api.html">
+          <i class="mdi mdi-image-filter-drama"></i>
+          <span>API</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./role.html">
+          <i class="mdi mdi-owl"></i>
+          <span>Roles</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./test.html">
+          <i class="mdi mdi-checkbox-multiple-marked-outline"></i>
+          <span>Tests</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./permission.html">
+          <i class="mdi mdi-certificate"></i>
+          <span>Permissions</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="mdi mdi-chart-line"></i>
+          <span>Analytics</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./report.html">
+          <i class="mdi mdi-calendar-blank"></i>
+          <span>Reports</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Offers</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-md-12">
+          <div class="row">
+
+            <!-- Add Offers -->
+            <div class="col-12">
+
+              <div class="d-flex justify-content-between my-2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#offerModal">Add Offers</button> 
+                <button type="button" class="btn btn-success">Generate Reports</button>
+              </div>
+
+                <!-- Add Offers Modal -->
+                <div class="modal fade" id="offerModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Add Offers</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-md-12 grid-margin stretch-card">
+                              <div class="card">
+                                <div class="card-body">
+                                  <form class="forms-sample">
+                                    <div class="row" id="items">
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerName">Name</label>
+                                          <input type="text" class="form-control" id="offerName" placeholder="Name" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerDescription">Description</label>
+                                          <input type="text" class="form-control" id="offerDescription" placeholder="Description" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerPrice" name="firstPrice">Price</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="Price" name="firstPrice" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerVolume" name="firstVolume">Volume</label>
+                                          <input type="text" class="form-control" id="offerVolume" placeholder="Volume" name="firstVolume" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerPrice" name="secondPrice">Price</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="Price" name="secondPrice" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerPrice" name="secondDataVolume">Data Volume</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="Data Volume" name="secondDataVolume" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerPrice" name="secondSMSVolume">SMS Volume</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="SMS Volume" name="secondSMSVolume" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerPrice" name="secondVoiceVolume">Voice Volume</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="Voice Volume" name="secondVoiceVolume" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <label>Disponibility Hours</label>
+                                        <div class="form-group input-group">
+                                          <input type="text" class="form-control" placeholder="Start Hours" required>
+                                          <input type="text" class="form-control" placeholder="End Hours" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerDurability">Durability</label>
+                                          <input type="text" class="form-control" id="offerDurability" placeholder="Durability" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="type">Type</label>
+                                          <select class="form-select py-2" id="type" required>
+                                            <option value="Data">Data</option>
+                                            <option value="SMS">SMS</option>
+                                            <option value="Voice">Voice</option>
+                                            <option value="Mixed">Mixed</option>
+                                          </select>
+                                        </div>
+                                      </div>                      
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="lang1">Disponibility Days</label>
+                                          <select id="lang1" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
+                                            <option value="1">Monday</option>
+                                            <option value="2">Tuesday</option>
+                                            <option value="3">Wednesday</option>
+                                            <option value="3">Thursday</option>
+                                            <option value="3">Friday</option>
+                                            <option value="3">Saturday</option>
+                                            <option value="3">Sunday</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="lang">Eligibility</label>
+                                          <select id="lang" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
+                                            <option value="1">English</option>
+                                            <option value="2">French</option>
+                                            <option value="3">Kiswahili</option>
+                                            <option value="3">Diné bizaad</option>
+                                            <option value="3">Oneida</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Offers Modal View -->
+                <div class="modal fade" id="offerViewModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Offers View</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-md-12 grid-margin stretch-card">
+                              <div class="card">
+                                <div class="card-body">
+                                  <form class="forms-sample">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <label for="offerName" class="fw-bold">Name</label><br>
+                                        <span class="ms-3">voluptas</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label for="offerDescription" class="fw-bold">Description</label><br>
+                                        <span class="ms-3">Ut inventore ipsa voluptas nulla</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label for="offerPrice" class="fw-bold">Price</label><br>
+                                        <span class="ms-3">$64</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label for="offerVolume" class="fw-bold">Volume</label><br>
+                                        <span class="ms-3">124</span>
+                                      </div>
+                                      
+                                      <div class="col-sm-12">
+                                        <label for="offerPrice" class="fw-bold">Data Volume</label><br>
+                                        <span class="ms-3">100Mo</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label class="fw-bold">SMS Volume</label><br>
+                                        <span class="ms-3">30SMS</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label class="fw-bold">Voice Volume</label><br>
+                                        <span class="ms-3">10mn</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label class="fw-bold">Durability</label><br>
+                                        <span class="ms-3">1week</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label class="fw-bold">Disponibility</label><br>
+                                        <span class="ms-3">[Tuesday, Friday]</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label class="fw-bold">Type</label><br>
+                                        <span class="ms-3">Mixed</span>
+                                      </div>
+                                      <div class="col-sm-12">
+                                        <label class="fw-bold">Eligibility</label><br>
+                                        <span class="ms-3">[A, B, C, ...]</span>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">OK</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Offers Modal Edit -->
+                <div class="modal fade" id="offerEditModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Add Offers</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-md-12 grid-margin stretch-card">
+                              <div class="card">
+                                <div class="card-body">
+                                  <form class="forms-sample">
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerName">Name</label>
+                                          <input type="text" class="form-control" id="offerName" placeholder="Name" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerDescription">Description</label>
+                                          <input type="text" class="form-control" id="offerDescription" placeholder="Description" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerPrice">Price</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="Price" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerVolume">Volume</label>
+                                          <input type="text" class="form-control" id="offerVolume" placeholder="Volume" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerPrice">Price</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="Price" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerPrice">Data Volume</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="Data Volume" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerPrice">SMS Volume</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="SMS Volume" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="form-group">
+                                          <label for="offerPrice">Voice Volume</label>
+                                          <input type="text" class="form-control" id="offerPrice" placeholder="Voice Volume" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerDurability">Durability</label>
+                                          <input type="text" class="form-control" id="offerDurability" placeholder="Durability" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerDisponibility">Disponibility</label>
+                                          <input type="text" class="form-control" id="offerDisponibility" placeholder="Disponibility" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="offerEligibility">Type</label>
+                                          <select class="form-select py-2" id="offerEligibility" required>
+                                            <option selected>Data</option>
+                                            <option value="1">SMS</option>
+                                            <option value="2">Voice</option>
+                                            <option value="3">Mixed</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="form-group">
+                                          <label for="lang">Eligibility</label>
+                                          <select id="lang" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
+                                            <option value="1">English</option>
+                                            <option value="2">French</option>
+                                            <option value="3">Kiswahili</option>
+                                            <option value="3">Diné bizaad</option>
+                                            <option value="3">Oneida</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Offers Modal Delete -->
+                <div class="modal fade" id="offerDeleteModal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title">Are you sure</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Do you want to delete?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Yes</button>
+                                <button type="button" class="btn btn-primary">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Offers Table -->
+                <div class="card recent-sales overflow-auto">
+
+                    <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="mdi mdi-dots-horizontal"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                        <li class="dropdown-header text-start">
+                        <h6>Filter</h6>
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">Today</a></li>
+                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                    </div>
+
+                    <div class="card-body">
+                    <h5 class="card-title">Recent Offers <span>| Today</span></h5>
+
+                    <table class="table table-borderless datatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Volume</th>
+                                <th scope="col">durability</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a href="#">#2457</a></th>
+                                <td>Brandon Jacob</td>
+                                <td><a href="#" class="text-primary">Data</a></td>
+                                <td>$64</td>
+                                <td>1Go</td>
+                                <td>1 Weeks</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                                <td>
+                                    <span><a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#offerViewModal"><i class="mdi mdi-eye"></i></a></span>
+                                    <span><a href="#" class="text-warning" data-bs-toggle="modal" data-bs-target="#offerEditModal"><i class="mdi mdi-pencil-box-outline"></i></a></span>
+                                    <span><a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#offerDeleteModal"><i class="mdi mdi-delete"></i></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#">#2147</a></th>
+                                <td>Bridie Kessler</td>
+                                <td><a href="#" class="text-primary">SMS</a></td>
+                                <td>$47</td>
+                                <td>1Go</td>
+                                <td>1 Weeks</td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                                <td>
+                                    <span><a href="#" class="text-primary"><i class="mdi mdi-eye"></i></a></span>
+                                    <span><a href="#" class="text-warning"><i class="mdi mdi-pencil-box-outline"></i></a></span>
+                                    <span><a href="#" class="text-danger"><i class="mdi mdi-delete"></i></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#">#2049</a></th>
+                                <td>Ashleigh Langosh</td>
+                                <td><a href="#" class="text-primary">Mixe</a></td>
+                                <td>$147</td>
+                                <td>1Go-100SMS-10mn</td>
+                                <td>1 Weeks</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                                <td>
+                                    <span><a href="#" class="text-primary"><i class="mdi mdi-eye"></i></a></span>
+                                    <span><a href="#" class="text-warning"><i class="mdi mdi-pencil-box-outline"></i></a></span>
+                                    <span><a href="#" class="text-danger"><i class="mdi mdi-delete"></i></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#">#2644</a></th>
+                                <td>Angus Grady</td>
+                                <td><a href="#" class="text-primar">Call</a></td>
+                                <td>$67</td>
+                                <td>1h</td>
+                                <td>1 Weeks</td>
+                                <td><span class="badge bg-danger">Rejected</span></td>
+                                <td>
+                                    <span><a href="#" class="text-primary"><i class="mdi mdi-eye"></i></a></span>
+                                    <span><a href="#" class="text-warning"><i class="mdi mdi-pencil-box-outline"></i></a></span>
+                                    <span><a href="#" class="text-danger"><i class="mdi mdi-delete"></i></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#">#2644</a></th>
+                                <td>Raheem Lehner</td>
+                                <td><a href="#" class="text-primary">Data</a></td>
+                                <td>$165</td>
+                                <td>1Go</td>
+                                <td>1 Weeks</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                                <td>
+                                    <span><a href="#" class="text-primary"><i class="mdi mdi-eye"></i></a></span>
+                                    <span><a href="#" class="text-warning"><i class="mdi mdi-pencil-box-outline"></i></a></span>
+                                    <span><a href="#" class="text-danger"><i class="mdi mdi-delete"></i></a></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    </div>
+
+                </div>
+            </div><!-- End Add Offers -->
+
+          </div>
+        </div><!-- End Left side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">Copyright <strong><span>&copy; 2022 Orange Burkina Faso</span></strong>. All Rights Reserved</div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="mdi mdi-arrow-up"></i></a>
+
+  <!-- JS Files -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/bootstrap-select.min.js"></script>
+  <script src="./js/simple-datatables.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./js/main.js"></script>
+  <script src="./js/form-management.js"></script>
+
+</body>
+
+</html>
