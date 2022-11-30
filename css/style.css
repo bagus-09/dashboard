@@ -390,7 +390,7 @@ h6 {
   z-index: 997;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  background-color: #FFA500;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -693,9 +693,9 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #4154f1;
+  color: #fff;
   transition: 0.3;
-  background: #f6f9ff;
+  background: #FFA500;
   padding: 10px 15px;
   border-radius: 4px;
 }
@@ -703,25 +703,25 @@ h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #4154f1;
+  color: #fff;
 }
 
 .sidebar-nav .nav-link.collapsed {
-  color: #012970;
+  color: #2c384e;
   background: #fff;
 }
 
 .sidebar-nav .nav-link.collapsed i {
-  color: #899bbd;
+  color: #FFA500;
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
-  background: #f6f9ff;
+  color: #fff;
+  background: #FFA500;
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #4154f1;
+  color: #fff;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -731,39 +731,6 @@ h6 {
 
 .sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
   transform: rotate(180deg);
-}
-
-.sidebar-nav .nav-content {
-  padding: 5px 0 0 0;
-  margin: 0;
-  list-style: none;
-}
-
-.sidebar-nav .nav-content a {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #012970;
-  transition: 0.3;
-  padding: 10px 0 10px 40px;
-  transition: 0.3s;
-}
-
-.sidebar-nav .nav-content a i {
-  font-size: 6px;
-  margin-right: 8px;
-  line-height: 0;
-  border-radius: 50%;
-}
-
-.sidebar-nav .nav-content a:hover,
-.sidebar-nav .nav-content a.active {
-  color: #4154f1;
-}
-
-.sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
 }
 
 /*--------------------------------------------------------------
@@ -829,14 +796,30 @@ h6 {
   flex-grow: 0;
 }
 
+.dashboard .sales-card{
+  background: #4154f1;
+}
+
 .dashboard .sales-card .card-icon {
   color: #4154f1;
   background: #f6f6fe;
 }
 
+.dashboard .cdl, .dashboard .cdl span{
+  color: #fff;
+}
+
+.dashboard .revenue-card{
+  background: #2eca6a;
+}
+
 .dashboard .revenue-card .card-icon {
   color: #2eca6a;
   background: #e0f8e9;
+}
+
+.dashboard .customers-card{
+  background: #ff771d;;
 }
 
 .dashboard .customers-card .card-icon {
@@ -891,38 +874,6 @@ h6 {
   padding-bottom: 0;
 }
 
-/* News & Updates */
-.dashboard .news .post-item+.post-item {
-  margin-top: 15px;
-}
-
-.dashboard .news img {
-  width: 80px;
-  float: left;
-  border-radius: 5px;
-}
-
-.dashboard .news h4 {
-  font-size: 15px;
-  margin-left: 95px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.dashboard .news h4 a {
-  color: #012970;
-  transition: 0.3s;
-}
-
-.dashboard .news h4 a:hover {
-  color: #4154f1;
-}
-
-.dashboard .news p {
-  font-size: 14px;
-  color: #777777;
-  margin-left: 95px;
-}
 
 /* Recent Sales */
 .dashboard .recent-sales {
@@ -1079,4 +1030,27 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+
+/*--------------------------------------------------------------
+# Global Button Colors
+--------------------------------------------------------------*/
+.btn-color{
+  color:#fff;
+  background: #FFA500;
+}
+
+.btn-color:hover{
+  color:#2c384e !important;
+  background: rgba(1, 41, 112, 0.1) !important;
+}
+
+.btn-color2{
+  color:#2c384e;
+  background: rgba(1, 41, 112, 0.1);
+}
+
+.btn-color2:hover{
+  color: #fff !important;
+  background: #FFA500 !important;
 }

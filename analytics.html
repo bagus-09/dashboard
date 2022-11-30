@@ -22,6 +22,7 @@
   <link href="./css/materialdesignicons.min.css" rel="stylesheet" >
   <link href="./css/datatables-style.css" rel="stylesheet">
   <link href="./css/bootstrap-select.min.css" rel="stylesheet">
+  <link href="./css/tagify.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="./css/style.css" rel="stylesheet">
@@ -43,7 +44,6 @@
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
-
         <li class="nav-item dropdown">
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
@@ -323,45 +323,13 @@
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Reports</li>
+          <li class="breadcrumb-item active">Analytics</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
       <div class="row">
-        <div class="container d-flex justify-content-center">
-          <!-- Left side columns -->
-          <div class="col-md-8">
-            <div class="row">
-
-              <div class="col-12">
-                  <div class="form-group">
-                      <select class="form-select py-2" id="offerEligibility" required>
-                        <option selected>Offers</option>
-                        <option value="1">Promotions</option>
-                      </select>
-                  </div>
-              </div>
-
-              <div class="col-sm-12 mt-5">
-                  <div class="form-group">
-                    <select id="lang" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
-                      <option value="1">English</option>
-                      <option value="2">French</option>
-                      <option value="3">Kiswahili</option>
-                      <option value="3">Diné bizaad</option>
-                      <option value="3">Oneida</option>
-                    </select>
-                  </div>
-              </div>
-
-              <div class="mt-5">
-                  <button class="btn btn-color">Generate report</button>
-              </div>
-            </div>
-          </div><!-- End Left side columns -->
-        </div>
 
       </div>
     </section>
@@ -379,18 +347,18 @@
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/bootstrap-select.min.js"></script>
-  <script src="./js/apexcharts.min.js"></script>
-  <script src="./js/echarts.min.js"></script>
+  <script src="./js/tagify.min.js"></script>
+  <script src="./js/tagify.polyfills.min.js"></script>
   <script src="./js/simple-datatables.js"></script>
-  <script src="./js/tinymce.min.js"></script>
-  <script src="./js/validate.js"></script>
-
+  
   <!-- Active Page -->
   <script defer src="./js/activePage.js"></script>
-
+  
   <!-- Main JS File -->
   <script src="./js/main.js"></script>
+  <script src="./js/tagify-init.js"></script>
 
+  
 </body>
 
 </html>
