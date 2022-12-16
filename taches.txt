@@ -1,0 +1,66 @@
+Taches a faire pour le backend:
+
+1. Creation du API
+2. Creation du Website
+
+A. Creation du API
+
+    a. Creation des fonctionnalites de gestion des offres
+        1. creerOffre
+        2. modifierOffre
+        3. activerOffre
+        4. desactiverOffre
+        5. consulterOffre
+        6. voirOffre
+        7. voirOffreSouscrite
+        8. souscrireOffre
+    b. Creation des fonctionnalites de gestion des promorions
+        1. creerPromotion
+        2. modifierPromotion
+        3. activerPromotion
+        4. desactiverPromotion
+        5. consulterPromotion
+        6. voirPromotion
+    c. Creation des fonctionnalites de gestion des eligibilites
+        1. creerEligibilite
+        2. modifierEligibilite
+        3. supprimerEligibilite
+        4. consulterEligibilite
+    d. Creation des fonctionnalites de gestion des utilisateur (API = utilisateur avec role=API)
+        1. creerUtilisateur
+        2. modifierUtilisateur
+        3. supprimerUtilisateur
+        4. consulterUtilisateur
+    [
+    e. Creation des fonctionnalites de gestion des api
+        1. creerUtilisateurApi
+        2. modifierUtilisateurApi
+        3. supprimerUtilisateurApi
+        4. consulterUtilisateurApi
+    ]
+    f. Creation des fonctionnalites de gestion des roles
+        1. creerRole
+        2. modifierRole
+        3. supprimerRole
+        4. consulterRole
+    g. Creation des fonctionnalites de gestion des tests
+        1. definirNumeroTest
+        2. validerTest
+    h. Creation des fonctionnalites de gestion des permissions
+        1.  ajouterPermission
+        2.  retirerPermission
+        3.  consulterPermission
+    i. Creation des fonctionnalites de gestion des reports
+        1. consulterRapport
+
+B. Securisation de l'API
+    1. On se connecte a l'API via un token
+    2. A travers le formulaire de connexion, on redirige l'utilisateur vers sa page en affichant les fonctionnalites dont il a les permissions
+
+C. Creation du wensite
+    1. creer le frontEnd
+    2. connecter le frontEnd a l'API
+
+D. Le necessaire pour la creation des fonctionnalites
+    1. creer les differentes tables et associations => creer les entites
+    2. creer les modeles

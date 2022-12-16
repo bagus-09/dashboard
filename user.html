@@ -235,7 +235,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link active-link" href="./index.html">
           <i class="mdi mdi-view-dashboard"></i>
           <span>Dashboard</span>
         </a>
@@ -256,34 +256,6 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="./eligibility.html">
-          <i class="mdi mdi-filter"></i>
-          <span>Eligibility</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="./user.html">
-          <i class="mdi mdi-account"></i>
-          <span>Users</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="./api.html">
-          <i class="mdi mdi-image-filter-drama"></i>
-          <span>API</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="./role.html">
-          <i class="mdi mdi-owl"></i>
-          <span>Roles</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
         <a class="nav-link collapsed" href="./test.html">
           <i class="mdi mdi-checkbox-multiple-marked-outline"></i>
           <span>Tests</span>
@@ -291,16 +263,25 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="./permission.html">
-          <i class="mdi mdi-certificate"></i>
-          <span>Permissions</span>
+        <a class="nav-link collapsed" href="./user.html">
+          <i class="mdi mdi-account"></i>
+          <span>Users</span>
+          <i class="mdi mdi-image-filter-drama ms-3"></i>
+
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="./analytics.html">
-          <i class="mdi mdi-chart-line"></i>
-          <span>Analytics</span>
+        <a class="nav-link collapsed" href="./role.html">
+          <i class="mdi mdi-account-card-details"></i>
+          <span>Roles</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./permission.html">
+          <i class="mdi mdi-certificate"></i>
+          <span>Permissions</span>
         </a>
       </li>
 
@@ -334,243 +315,14 @@
         <div class="col-md-12">
           <div class="row">
 
-            <!-- Add Users -->
             <div class="col-12">
 
-                <button type="button" class="btn btn-color mb-2" data-bs-toggle="modal" data-bs-target="#userModal">Add Users</button>
-                
-                <!-- Add Users Modal -->
-                <div class="modal fade" id="userModal" tabindex="-1">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Add Users</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col-md-12 grid-margin stretch-card">
-                              <div class="card">
-                                <div class="card-body">
-                                  <form class="forms-sample">
-                                    <div class="row">
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerName">Last Name</label>
-                                          <input type="text" class="form-control" id="offerName" placeholder="Last Name" required>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerDescription">First Name</label>
-                                          <input type="text" class="form-control" id="offerDescription" placeholder="First Name" required>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerPrice">Email</label>
-                                          <input type="text" class="form-control" id="offerPrice" placeholder="Email" required>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerVolume">Password</label>
-                                          <input type="text" class="form-control" id="offerVolume" placeholder="Password" required>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerEligibility">Roles</label>
-                                          <select class="form-select py-2" id="offerEligibility" required>
-                                            <option selected>Data</option>
-                                            <option value="1">SMS</option>
-                                            <option value="2">Voice</option>
-                                            <option value="3">Mixed</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                      
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="lang">Permissions</label>
-                                          <select id="lang" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
-                                            <option value="1">English</option>
-                                            <option value="2">French</option>
-                                            <option value="3">Kiswahili</option>
-                                            <option value="3">Diné bizaad</option>
-                                            <option value="3">Oneida</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Add</button>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                <!-- Offers Modal View -->
-                <div class="modal fade" id="userViewModal" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Users View</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col-md-12 grid-margin stretch-card">
-                              <div class="card">
-                                <div class="card-body">
-                                  <form class="forms-sample">
-                                    <div class="row">
-                                      <div class="col-sm-12">
-                                        <label for="offerName" class="fw-bold">Name</label><br>
-                                        <span class="ms-3">voluptas</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label for="offerDescription" class="fw-bold">Description</label><br>
-                                        <span class="ms-3">Ut inventore ipsa voluptas nulla</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label for="offerPrice" class="fw-bold">Price</label><br>
-                                        <span class="ms-3">$64</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label for="offerVolume" class="fw-bold">Volume</label><br>
-                                        <span class="ms-3">124</span>
-                                      </div>
-                                      
-                                      <div class="col-sm-12">
-                                        <label for="offerPrice" class="fw-bold">Data Volume</label><br>
-                                        <span class="ms-3">100Mo</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label class="fw-bold">SMS Volume</label><br>
-                                        <span class="ms-3">30SMS</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label class="fw-bold">Voice Volume</label><br>
-                                        <span class="ms-3">10mn</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label class="fw-bold">Durability</label><br>
-                                        <span class="ms-3">1week</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label class="fw-bold">Disponibility</label><br>
-                                        <span class="ms-3">[Tuesday, Friday]</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label class="fw-bold">Type</label><br>
-                                        <span class="ms-3">Mixed</span>
-                                      </div>
-                                      <div class="col-sm-12">
-                                        <label class="fw-bold">Eligibility</label><br>
-                                        <span class="ms-3">[A, B, C, ...]</span>
-                                      </div>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">OK</button>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                <!-- Offers Modal Edit -->
-                <div class="modal fade" id="userEditModal" tabindex="-1">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Add Users</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col-md-12 grid-margin stretch-card">
-                              <div class="card">
-                                <div class="card-body">
-                                  <form class="forms-sample">
-                                    <div class="row">
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerName">Last Name</label>
-                                          <input type="text" class="form-control" id="offerName" placeholder="Last Name" required>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerDescription">First Name</label>
-                                          <input type="text" class="form-control" id="offerDescription" placeholder="First Name" required>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerPrice">Email</label>
-                                          <input type="text" class="form-control" id="offerPrice" placeholder="Email" required>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerVolume">Password</label>
-                                          <input type="text" class="form-control" id="offerVolume" placeholder="Password" required>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="offerEligibility">Roles</label>
-                                          <select class="form-select py-2" id="offerEligibility" required>
-                                            <option selected>Data</option>
-                                            <option value="1">SMS</option>
-                                            <option value="2">Voice</option>
-                                            <option value="3">Mixed</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                      
-                                      <div class="col-sm-6">
-                                        <div class="form-group">
-                                          <label for="lang">Permissions</label>
-                                          <select id="lang" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
-                                            <option value="1">English</option>
-                                            <option value="2">French</option>
-                                            <option value="3">Kiswahili</option>
-                                            <option value="3">Diné bizaad</option>
-                                            <option value="3">Oneida</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Add</button>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                <!-- Offers Modal Delete -->
+              <div class="d-flex justify-content-between my-2">
+                <a href="./add_user.html" class="btn btn-color">Add Users</a>
+                <a href="#" class="btn btn-color2">Generate Reports</a>
+              </div>
+          
+                <!-- Modal Delete -->
                 <div class="modal fade" id="userDeleteModal" tabindex="-1">
                     <div class="modal-dialog">
                         <div class="modal-content">
