@@ -1054,3 +1054,22 @@ h6 {
   color: #fff !important;
   background: #FFA500 !important;
 }
+
+/*--------------------------------------------------------------
+# Date input
+--------------------------------------------------------------*/
+
+.date{
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+
+.date input[type="date"]{
+  border: hidden;
+  background: transparent;
+  color: #fff;
+}
+
+.date input[type="date"]:hover{
+  color: #2c384e;
+}

@@ -311,38 +311,69 @@
 
     <section class="section dashboard">
       <div class="row">
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-center" style="height: 400px;">
           <!-- Left side columns -->
           <div class="col-md-8">
-            <div class="row">
+            
+            <div class="card h-100">
+              
 
-              <div class="col-12">
-                  <div class="form-group">
-                      <select class="form-select py-2" id="offerEligibility" required>
-                        <option selected>Offers</option>
-                        <option value="1">Promotions</option>
+              <div class="card-body">
+                <div class="row">
+                  <h5 class="card-title">All Reports</h5>
+
+                  <div class="d-flex justify-content-between mb-3 filtered2">
+                    <div class="date btn-color">
+                      <input type="date">
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                      To
+                    </div>
+
+                    <div class="date btn-color">
+                      <input type="date">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <select id="lang" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
+                        <option value="Offers">Offers</option>
+                        <option value="Promotions">Promotions</option>
+                        <option value="Users">Users</option>
                       </select>
+                    </div>
                   </div>
-              </div>
 
-              <div class="col-sm-12 mt-5">
-                  <div class="form-group">
-                    <select id="lang" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
-                      <option value="1">English</option>
-                      <option value="2">French</option>
-                      <option value="3">Kiswahili</option>
-                      <option value="3">Diné bizaad</option>
-                      <option value="3">Oneida</option>
-                    </select>
+                  <div class="col-sm-12 mt-5">
+                    <div class="form-group">
+                      <select id="lang" name="lang" class="form-control selectpicker show-menu-arrow" data-live-search="true" multiple required>
+                        <option value="1">English</option>
+                        <option value="2">French</option>
+                        <option value="3">Kiswahili</option>
+                        <option value="3">Diné bizaad</option>
+                        <option value="3">Oneida</option>
+                      </select>
+                    </div>
                   </div>
-              </div>
+                </div>
 
-              <div class="mt-5">
+        
+                
+
+                
+
+                <div class="mt-5">
                   <button class="btn btn-color">Generate report</button>
+                </div>
               </div>
             </div>
-          </div><!-- End Left side columns -->
-        </div>
+
+          </div>
+              
+        </div><!-- End Left side columns -->
+      </div>
 
       </div>
     </section>
@@ -371,6 +402,7 @@
 
   <!-- Main JS File -->
   <script src="./js/main.js"></script>
+  <script src="./js/hidden-form.js"></script>
 
 </body>
 

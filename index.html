@@ -325,14 +325,14 @@
                       <h6>Filter</h6>
                     </li>
 
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                    <li><a class="dropdown-item" id="c1_filter_item1" href="#">Today</a></li>
+                    <li><a class="dropdown-item" id="cd1_filter_item2" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" id="cd1_filter_item3" href="#">This Year</a></li>
                   </ul>
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title cdl">Sales <span>| Today</span></h5>
+                  <h5 class="card-title cdl">Sales <span>| <span id="cd1_filter_value">Today</span> </span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -810,6 +810,7 @@
 
   <!-- Main JS File -->
   <script src="./js/main.js"></script>
+  <script src="./js/filter.js"></script>
 
 </body>
 

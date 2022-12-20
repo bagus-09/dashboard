@@ -379,6 +379,22 @@
                       <div id="RefillCollapseOne" class="accordion-collapse collapse" aria-labelledby="RefillAccordionOne" data-bs-parent="#RefillAccordion">
                         <div class="accordion-body">
                           <div class="row">
+                            
+                            <div class="col-md-12">
+                              <h3>Voucher Refill</h3>
+
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <label for="voucherType">Type</label>
+                                    <select class="form-select py-2" id="voucherType" required>
+                                      <option value="Less">Less</option>
+                                      <option value="Full">Full</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
 
                             <div class="col-md-12">
                               <h3>Mandatory Parameters</h3>
@@ -414,51 +430,27 @@
                                       <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
                                   </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 less">
                                   <div class="form-group">
                                       <label for="offerSubscriberNumber">transactionAmount</label>
                                       <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
                                   </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 less">
                                   <div class="form-group">
                                       <label for="offerSubscriberNumber">transactionCurrency</label>
                                       <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
                                   </div>
                                 </div>
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                      <label for="offerSubscriberNumber">originTimeStamp</label>
-                                      <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 less">
                                   <div class="form-group">
                                       <label for="offerSubscriberNumber">refillProfileID</label>
                                       <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
                                   </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 full">
                                   <div class="form-group">
                                       <label for="offerSubscriberNumber">voucherActivationCode</label>
-                                      <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                      <label for="offerSubscriberNumber">locationNumber</label>
-                                      <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                      <label for="offerSubscriberNumber">locationNumberNAI</label>
-                                      <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                      <label for="offerSubscriberNumber">Subscriber Number</label>
                                       <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
                                   </div>
                                 </div>
@@ -534,6 +526,18 @@
                                   <div class="form-group">
                                       <label for="offerExternalData2">selectedOption</label>
                                       <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 full">
+                                  <div class="form-group">
+                                      <label for="offerSubscriberNumber">locationNumber</label>
+                                      <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 full">
+                                  <div class="form-group">
+                                      <label for="offerSubscriberNumber">locationNumberNAI</label>
+                                      <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
                                   </div>
                                 </div>
                               </div>
@@ -622,76 +626,129 @@
                                     <label for="offerExternalData1">transactionCurrency</label>
                                     <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
                                 </div>
-                              </div>
+                              </div>                       
                               
-                              
-                              <div class="col-md-6">
+                              <div class="col-md-6 updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">adjustmentAmountRelative</label>
                                     <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 updateInformation">
                                 <div class="form-group">
-                                    <label for="offerExternalData2">dedicatedAccountUpdateInformation</label>
-                                    <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
+                                  <div class="accordion accordion-flush" id="UpdateInformationAccordion">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="UpdateInformationOne">
+                                        <button class="accordion-button collapsed" id="updateInformationBtn" type="button" data-bs-toggle="collapse" data-bs-target="#UpdateInformationCollapseOne" aria-expanded="false" aria-controls="flush-collapseOne">dedicatedAccountUpdateInformation</button>
+                                      </h2>
+                                      <div id="UpdateInformationCollapseOne" class="accordion-collapse collapse" aria-labelledby="UpdateInformationOne" data-bs-parent="#UpdateInformationAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <h3>Mandatory Parameters</h3>
+
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="offerExternalData2">dedicatedAccountID</label>
+                                                        <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-12">
+                                                <h3>Optional Parameters</h3>
+
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <div class="form-group adjustment-amount">
+                                                        <label for="adjustmentAmountRelative">adjustmentAmountRelative</label>
+                                                        <input type="text" class="form-control" id="adjustmentAmountRelative" placeholder="External Data 2" required>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 dedicated-account">
+                                                    <div class="form-group">
+                                                        <label for="dedicatedAccount">dedicatedAccountValueNew</label>
+                                                        <input type="text" class="form-control" id="dedicatedAccount" placeholder="External Data 2" required>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 adjustment-date">
+                                                    <div class="form-group">
+                                                        <label for="adjustmentDate">adjustmentDateRelative</label>
+                                                        <input type="text" class="form-control" id="adjustmentDate" placeholder="External Data 2" required>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 expiry-date">
+                                                    <div class="form-group">
+                                                        <label for="offerExpiryDate">expiryDate</label>
+                                                        <input type="text" class="form-control" id="offerExpiryDate" placeholder="External Data 2" required>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 supervision-relative updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">supervisionExpiryDateRelative</label>
-                                    <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
+                                    <input type="text" class="form-control" id="supervisionExpiryDateRelative" placeholder="External Data 2" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 supervision updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData1">supervisionExpiryDate</label>
-                                    <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                    <input type="text" class="form-control" id="supervisionExpiryDate" placeholder="External Data 1" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 service-relative updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">serviceFeeExpiryDateRelative</label>
-                                    <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
+                                    <input type="text" class="form-control" id="serviceFeeExpiryDateRelative" placeholder="External Data 2" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 service updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">serviceFeeExpiryDate</label>
-                                    <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
+                                    <input type="text" class="form-control" id="serviceFeeExpiryDate" placeholder="External Data 2" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">creditClearancePeriod</label>
                                     <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">serviceRemovalPeriod</label>
                                     <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">transactionType</label>
                                     <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">transactionCode</label>
                                     <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData1">External Data 1</label>
                                     <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
                                 </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 updateInformationHide">
                                 <div class="form-group">
                                     <label for="offerExternalData2">External Data 2</label>
                                     <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
@@ -726,6 +783,7 @@
                         <select class="form-select py-2" id="offerType" required>
                             <option value="List">List</option>
                             <option value="Function">Function</option>
+                            <option value="Regular">Regular</option>
                         </select>
                     </div>
                 </div>
@@ -756,6 +814,300 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 regular">
+                  <div class="form-group">
+                      <label for="offerIMSIS">IMSIS</label>
+                      <input type="text" class="form-control" name='tags' id="offerServiceClass" required>
+                  </div>
+                </div>
+                <div class="col-md-6 regular">
+                  <div class="form-group">
+                      <label for="offerIMEI">IMEI</label>
+                      <input type="text" class="form-control" name='tags' id="offerServiceClass" required>
+                  </div>
+                </div>
+                <div class="col-md-12 function mt-3">
+                  <div class="row">
+                    <div class="col-md-4 account-details">
+                      <div class="form-group">
+                        <div class="accordion accordion-flush" id="accordionAccount">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="details-One">
+                              <button class="accordion-button collapsed" id="detailsBtn" type="button" data-bs-toggle="collapse" data-bs-target="#details-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">getAccountDetails</button>
+                            </h2>
+                            <div id="details-collapseOne" class="accordion-collapse collapse" aria-labelledby="details-One" data-bs-parent="#accordionAccount">
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <h3>Mandatory Parameters</h3>
+
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerOriginNodeType">originNodeType</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerOriginNodeType" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originHostName</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originTransactionID</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originTimeStamp</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">subscriberNumber</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                    <h3>Optional Parameters</h3>
+
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="offerAmount">subscriberNumberNAI</label>
+                                          <input type="text" class="form-control" id="offerAmount" placeholder="Amount" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData1">messageCapabilityFlag</label>
+                                            <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData2">requestedInformationFlags</label>
+                                            <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 balance-account">
+                      <div class="form-group">
+                        <div class="accordion accordion-flush" id="accordionBalance">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="balance-One">
+                              <button class="accordion-button collapsed" id="balanceBtn" type="button" data-bs-toggle="collapse" data-bs-target="#balance-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">getOffers</button>
+                            </h2>
+                            <div id="balance-collapseOne" class="accordion-collapse collapse" aria-labelledby="balance-One" data-bs-parent="#accordionBalance">
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <h3>Mandatory Parameters</h3>
+
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerOriginNodeType">originNodeType</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerOriginNodeType" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originHostName</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originTransactionID</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originTimeStamp</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">subscriberNumber</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                    <h3>Optional Parameters</h3>
+
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="offerAmount">subscriberNumberNAI</label>
+                                          <input type="text" class="form-control" id="offerAmount" placeholder="Amount" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 offer-selection">
+                                        <div class="form-group">
+                                            <label for="offerSelection">offerSelection</label>
+                                            <input type="text" class="form-control" id="offerSelection" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 request-inactive">
+                                        <div class="form-group">
+                                            <label for="requestInactiveOffers">requestInactiveOffersFlags</label>
+                                            <input type="text" class="form-control" id="requestInactiveOffers" placeholder="External Data 2" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 product-selection">
+                                        <div class="form-group">
+                                            <label for="productSelection">productSelection</label>
+                                            <input type="text" class="form-control" id="productSelection" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData1">offerRequestedTypeFlag</label>
+                                            <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData1">requestDedicatedAccountDetailsFlag</label>
+                                            <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData1">requestSubDedicatedAccountDetailsFlag</label>
+                                            <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData1">requestFafDetailsFlag</label>
+                                            <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData1">requestFirstAccessibleAndExpiredBalanceAndDateFlag</label>
+                                            <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData1">requestUsageCountersAndThresholdsFlag</label>
+                                            <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 accumulators">
+                      <div class="form-group">
+                        <div class="accordion accordion-flush" id="accordionAccumulators">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="accumulators-headingOne">
+                              <button class="accordion-button collapsed" id="accumulatorsBtn" type="button" data-bs-toggle="collapse" data-bs-target="#accumulators-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">getAccumulators</button>
+                            </h2>
+                            <div id="accumulators-collapseOne" class="accordion-collapse collapse" aria-labelledby="accumulators-headingOne" data-bs-parent="#accordionAccumulators">
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <h3>Mandatory Parameters</h3>
+
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerOriginNodeType">originNodeType</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerOriginNodeType" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originHostName</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originTransactionID</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">originTimeStamp</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerSubscriberNumber">subscriberNumber</label>
+                                            <input type="tel" class="form-control" name='tags' id="offerSubscriberNumber" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-12">
+                                    <h3>Optional Parameters</h3>
+
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="offerAmount">subscriberNumberNAI</label>
+                                          <input type="text" class="form-control" id="offerAmount" placeholder="Amount" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData1">messageCapabilityFlag</label>
+                                            <input type="text" class="form-control" id="offerExternalData1" placeholder="External Data 1" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="offerExternalData2">chargingRequestInformation</label>
+                                            <input type="text" class="form-control" id="offerExternalData2" placeholder="External Data 2" required>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
 
@@ -770,20 +1122,43 @@
                   <label for="offerCost">Success Messages</label>
                   <input type="text" class="form-control" id="offerCost" placeholder="Success Messages" list="success" required>
                   <datalist id="success">
-                    <option value="Default Success Message">Message</option>
+                    <option value="Default Success Message">Default Success Message</option>
                   </datalist>
                 </div>
             </div>
-
             <div class="col-md-6">
               <div class="form-group">
-                <label for="offerCost">Errors Messages</label>
-                <input type="text" class="form-control" id="offerCost" placeholder="Errors Messages" list="errors" required>
-                <datalist id="errors">
-                  <option value="">Default Low Balance</option>
-                  <option value="">Default Offer Not Available</option>
-                  <option value="">Default Not Eligible</option>
-                  <option value="">Default Technical problem</option>
+                <label for="offerCost">Low Balance</label>
+                <input type="text" class="form-control" id="offerCost" placeholder="Default Low Balance" list="success" required>
+                <datalist id="success">
+                  <option value="Default Success Message">Default Success Message</option>
+                </datalist>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="offerCost">Offer Not Available</label>
+                <input type="text" class="form-control" id="offerCost" placeholder="Default Offer Not Available" list="success" required>
+                <datalist id="success">
+                  <option value="Default Offer Not Available">Default Offer Not Available</option>
+                </datalist>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="offerCost">Not Eligible</label>
+                <input type="text" class="form-control" id="offerCost" placeholder="Default Not Eligible" list="success" required>
+                <datalist id="success">
+                  <option value="Default Not Eligible">Default Not Eligible</option>
+                </datalist>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="offerCost">Technical problem</label>
+                <input type="text" class="form-control" id="offerCost" placeholder="Default Technical problem" list="success" required>
+                <datalist id="success">
+                  <option value="Default Technical problem">Default Technical problem</option>
                 </datalist>
               </div>
             </div>
