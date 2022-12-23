@@ -3,8 +3,10 @@
  */ 
 
  const functionItems = $('.function');
+ const regularItems = $('.regular');
 
  functionItems.hide();
+ regularItems.hide();
 
 
 $('#offerType').change( function () {
@@ -205,14 +207,14 @@ $('#updateInformationBtn').on('click', function(){
     if(count3 % 2 != 0){
         updateInformationHide.hide();
 
-        updateInformationAccordion.removeClass('col-md-6');
+        updateInformationAccordion.removeClass('col-md-3');
         updateInformationAccordion.addClass('col-md-12');
         
     }else{
         updateInformationHide.show();
 
         updateInformationAccordion.removeClass('col-md-12');
-        updateInformationAccordion.addClass('col-md-6');
+        updateInformationAccordion.addClass('col-md-3');
         
     }
 
